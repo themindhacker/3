@@ -264,18 +264,7 @@ li {
     <label>Language</label>
     <input id="lang" type="text" placeholder="Malayalam"/>
   </div>
-	   <div class="generator__questions">
-    <label>Screenshot URL 1</label>
-    <input id="url1" type="text" placeholder="https://dvdplaymv.com/file1.png"/>
-  </div>
-	    <div class="generator__questions">
-    <label>Screenshot URL 2</label>
-    <input id="url2" type="text" placeholder="https://dvdplaymv.com/file2.png"/>
-  </div>
-	 	    <div class="generator__questions">
-    <label>Screenshot URL 3</label>
-    <input id="url3" type="text" placeholder="https://dvdplaymv.com/file3.png"/>
-  </div>
+	   
 
   
     
@@ -321,9 +310,6 @@ generate.addEventListener('click', () => {
 	const name = document.querySelector('#name').value;
 	const url = document.querySelector('#url').value;
 	const lang = document.querySelector('#lang').value;
-	const url1 = document.querySelector('#url1').value;
-	const url2 = document.querySelector('#url2').value;
-	const url3 = document.querySelector('#url3').value;
 	const markupContainer = document.querySelector('.generator__markup-generated');
 	
 	const markup = `
