@@ -2,6 +2,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -247,14 +248,7 @@ li {
 <label>Movie Name</label>
 <input id="name" type="text" placeholder="KGF" />
 </div>
-<div class="generator__questions">
-    <label>Image Link</label>
-    <input id="imgurl" type="text" placeholder="/img.png" />
-    </div>
-<div class="generator__questions">
-<label>Movie Link</label>
-<input id="url" type="text" placeholder="https://www.tgfiles.xyz/2022/04/night-drive-2022.html" />
-</div>
+
 <div class="generator__questions">
 <label>Language</label>
 <input id="lang" type="text" placeholder="Malayalam" />
@@ -290,16 +284,12 @@ const generate = document.querySelector('.generate-markup');
 
 generate.addEventListener('click', () => {
 	const name = document.querySelector('#name').value;
-	const url = document.querySelector('#url').value;
 	const lang = document.querySelector('#lang').value;
-    const imgurl = document.querySelector('#imgurl').value;
 	const markupContainer = document.querySelector('.generator__markup-generated');
 	
 	const markup = `
 
-    <div class="separator" style="clear: both; text-align: center;">
-    <a href="${imgurl}" style="margin-left: 1em; margin-right: 1em;"><img alt="${name} Full Movie Download" border="0" src="${imgurl}" title="${name} Full Movie Download" /></a>
-</div>
+
 
     <p style="text-align: left;">
     So finally the latest movie ${name} was released. This is one of my favorite films I have viewed the movie was very awesome almost everyone who watches this movie will like this movie Oh no we are moving from our topic.
@@ -314,19 +304,38 @@ generate.addEventListener('click', () => {
 </p>
 <br />
 <div class="down">
-<h2 style="text-align: left;">${name} Full Movie Download Links</h2>
-<div>
-    Here is the download link of the latest ${lang} movie ${name}.&nbsp; You can download the movie just by clicking on the buttons below. I Recommend you use the Google Drive link. Gdrive has a very fast server. On the next page, you can
-    choose which quality you want. There is 3 quality available 480,720p, 1080p. 480p file size is between 400MB to 480MB. 720p file size is between 650MB to 800MB. 1080p file size is between 900MB to 1.5GB
-</div>
-<div><br /></div>
-<center>
-
-<h3 style="text-align: center;">${name} Full Movie Direct File Link In Telegram :</h3>
-<br/>
-<a href="${url}"><button><i class="fa fa-download"></i>&nbsp;Download</button></a>
-<br/>
-</center>
+    <h2 style="text-align: left;">${name} Full Movie Download Links</h2>
+    <div>
+        Here is the download link of the latest Tamil movie ${name}.&nbsp; You can download the movie just by clicking on the buttons below. I Recommend you use the Google Drive link. Gdrive has a very fast server. On the next page, you can
+        choose which quality you want. There is 3 quality available 480,720p, 1080p. 480p file size is between 400MB to 480MB. 720p file size is between 650MB to 800MB. 1080p file size is between 900MB to 1.5GB
+    </div>
+    <div><br /></div>
+    <center>
+        <h3 style="text-align: center;">${name} Full Movie Google Drive Download Link:</h3>
+        <br />
+        <a href="https://files.dvdplaymv.com/">
+            <button><i class="fa fa-download"></i>&nbsp;Download</button>
+        </a>
+        <br />
+        <h3 style="text-align: center;">${name} Full Movie Direct Download Link From Tamilrockers Server :</h3>
+        <br />
+        <a href="https://files.dvdplaymv.com/">
+            <button><i class="fa fa-download"></i>&nbsp;Download</button>
+        </a>
+        <br />
+        <h3 style="text-align: center;">${name} Full Movie Mega Download Link:</h3>
+        <br />
+        <a href="https://files.dvdplaymv.com/">
+            <button><i class="fa fa-download"></i>&nbsp;Download</button>
+        </a>
+        <br />
+        <h3 style="text-align: center;">${name} Full Movie Anonfiles Download Link</h3>
+        <br />
+        <a href="https://files.dvdplaymv.com/">
+            <button><i class="fa fa-download"></i>&nbsp;Download</button>
+        </a>
+        <br />
+    </center>
 </div>
 
 <h2 style="text-align: left;">Is torrent is illegal?</h2>
@@ -567,7 +576,7 @@ many people search for &nbsp;${name} Full Movie Download Movierulz on the intern
     </div>
 </div>
 <h2>
-    <div class="dis1"><h2>Disclaimer</h2><p>We never engage our visiter to go to any movie downloading website Like isaimini for the latest movies, and also we did not promote any website. This article is only for Education purposes.</p><p>As per the Indian act, piracy of original content is punishable. These websites are not safe to download any movies. If you want to download any movie, please download it at your own risk. This is just a news article please don't give us dmca notice. If you want to remove this article from our website sent a mail to dmca24x7@gmail.com we will remove the article immediately</p>	</div>	
+    <div class="dis1"><h2>Disclaimer</h2><p>We never engage our visiter to go to any movie downloading website Like isaimini for the latest movies, and also we did not promote any website. This article is only for Education purposes.</p><p>As per the Indian act, piracy of original content is punishable. These websites are not safe to download any movies. If you want to download any movie, please download it at your own risk. This is just a news article please don't give us dmca notice. If you want to remove this article from our website sent a mail to user24x7@protonmail.com we will remove the article immediately</p>	</div>	
 
 
 
