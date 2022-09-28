@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -240,10 +246,24 @@ li {
 
 <hr>
 <div class="from">
-  
+    <div class="generator__questions">
+        <label>Image URL</label>
+        <input id="urlimg" type="text" placeholder="/img.jpg" />
+    </div>
 <div class="generator__questions">
 <label>Movie Name</label>
 <input id="name" type="text" placeholder="KGF" />
+</div>
+
+<div class="generator__questions">
+<label>Language</label>
+<input value="Malayalam" id="lang" type="text" />
+</div>
+
+
+<div class="generator__questions" style="text-align: center;"><br />
+</div>
+<div class="generator__questions" style="text-align: center;"><br />
 </div>
 </div>
 <br>
@@ -273,120 +293,22 @@ const generate = document.querySelector('.generate-markup');
 
 generate.addEventListener('click', () => {
 	const name = document.querySelector('#name').value;
+	const lang = document.querySelector('#lang').value;
+    const urlimg = document.querySelector('#urlimg').value;
 
 	const markupContainer = document.querySelector('.generator__markup-generated');
 	
 	const markup = `
-${name} (2022) Full Movie Download
+
 
     <center>
-    <img  class="fileimg"alt="${name} Full Movie Download" title="${name} Full Movie Download" src="https://files.dvdplaymv.com/file.png"/>
+    <img alt="${name} Full Movie Download" title="${name} Full Movie Download" src="${urlimg}"/>
     </center>
+    <p>${name} Movie Download vegamovies HD ${lang} 480p 720p 1080p HD 300 MB | ${name} Movie Dual audio ${lang} HD filmyzilla,</p><p><br /></p>
 
-    <h2 style="text-align: left;">${name} Full Movie Download Links</h2>
-    <div>
-        Here is the download link of the latest Tamil movie ${name}.&nbsp; You can download the movie just by clicking on the buttons below. I Recommend you use the Google Drive link. Gdrive has a very fast server. On the next page, you can
-        choose which quality you want. There is 3 quality available 480,720p, 1080p. 480p file size is between 400MB to 480MB. 720p file size is between 650MB to 800MB. 1080p file size is between 900MB to 1.5GB.
-    </div>
-    
-    <div><br /></div>
-    <div class="down">
-    <center>
-        <h3 style="text-align: center;">${name} Full Movie Google Drive Download Link:</h3>
-        <br />
-        <div style="text-align:center;">
-        <a href="https://file.dvdplay1.com/">
-            <button><i class="fa fa-download"></i>&nbsp;Download</button>
-        </a>
-    </div>
-        <br />
-     
-        <h3 style="text-align: center;">${name} Full Movie Direct Download Link From Tamilrockers Server :</h3>
-    
-        <div style="text-align:center;">
-        <a href="https://files.dvdplaymv.com/">
-            <button><i class="fa fa-download"></i>&nbsp;Download</button>
-        </a>
-    </div>
+<p>Hello Friends in this article we are going to know about ${name} movie download. Nowadays usage of torrent websites is increasing as many people watch movies on torrent websites for free. Yes, likewise the popular movie ${name} got leaked on Tamilyogi. This torrent website is popular for leaking Tamil, Telugu, and Bollywood Movies. Users can download all the movies and other content for free from Tamilyogi.</p><p><br /></p>
 
-        <h3 style="text-align: center;">${name} Full Movie Mega Download Link:</h3>
-      
-        <div style="text-align:center;">
-        <a href="hhttps://file.dvdplay1.com/">
-            <button><i class="fa fa-download"></i>&nbsp;Download</button>
-        </a>
-    </div>
-     
-        <h3 style="text-align: center;">${name} Full Movie Anonfiles Download Link</h3>
-  
-        <div style="text-align:center;">
-        <a href="https://file.dvdplay1.com/">
-            <button><i class="fa fa-download"></i>&nbsp;Download</button>
-        </a>
-    </div>
-       
-    </center>
-</div>
-
-<div class="dis1"><h2>Disclaimer</h2><p>We never engage our visiter to go to any movie downloading website Like Movierulz for the latest movies, and also we did not promote any website. This article is only for Education purposes.</p><p>As per the Indian act, piracy of original content is punishable. These websites are not safe to download any movies. If you want to download any movie, please download it at your own risk. This is just a news article please don't give us dmca notice. If you want to remove this article from our website sent a mail to user24x7@protonmail.com we will remove the article immediately</p>	</div>	
-
-
-    <ul>
-        <li>${name} Full Movie Download dvplay</li>
-        <li>${name} Full Movie Download klwap</li>
-        <li>${name} Full Movie Download dvdprime</li>
-        <li>${name} Full Movie Download tamilrockers</li>
-        <li>${name} Full Movie Download isaimini</li>
-        <li>${name} Full Movie Download tamilgun</li>
-        <li>${name} Full Movie Download tamilmv</li>
-        <li>${name} Full Movie Download 1tamilmv</li>
-        <li>${name} Full Movie Download isaiminiweb</li>
-        <li>${name} Full Movie Download isaiminida</li>
-        <li>${name} Full Movie Download isaiminipa</li>
-        <li>${name} Full Movie Download tamildbox</li>
-        <li>${name} Full Movie Download moviesdaweb</li>
-        <li>${name} Full Movie Download moviesda</li>
-        <li>${name} Full Movie Download marina rockers</li>
-        <li>${name} Full Movie Download sri rockers</li>
-        <li>${name} Full Movie Download kuttymovies</li>
-        <li>${name} Full Movie Download cooltamil</li>
-        <li>${name} Full Movie Download Youtube</li>
-        <li>${name} Full Movie Download Disney+ Hotstar</li>
-        <li>${name} Full Movie Download Netflix</li>
-        <li>${name} Full Movie Download Amazon Prime Video</li>
-        <li>${name} Full Movie Download ZEE5</li>
-        <li>${name} Full Movie Download ALT Balaji</li>
-        <li>${name} Full Movie Download MX Player</li>
-        <li>${name} Full Movie Download Hungama</li>
-        <li>${name} Full Movie Download BIGFlix</li>
-        <li>${name} Full Movie Download TnMoviez</li>
-        <li>${name} Full Movie Download isaidub</li>
-        <li>${name} Full Movie Download orutamil</li>
-        <li>${name} Full Movie Download a2movies</li>
-        <li>${name} Full Movie Download Cinemavilla</li>
-        <li>${name} Full Movie Download Dvdplay</li>
-        <li>${name} Full Movie Download mallumv</li>
-        <li>${name} Full Movie Download English</li>
-        <li>${name} Full Movie Download telegram</li>
-        <li>${name} Full Movie Download telegram link</li>
-        <li>${name} Full Movie Download isaiminimob</li>
-        <li>${name} Full Movie Download tamilblasters</li>
-        <li>${name} Full Movie Download tamilplay</li>
-        <li>${name} Full Movie Download jiorockers</li>
-        <li>${name} Full Movie Download movierulz</li>
-        <li>${name} Full Movie Download kotha movies</li>
-        <li>${name} Full Movie Download HDRip</li>
-<li>${name} Full Movie Download BluRay</li>
-<li>${name} Full Movie Download 720p</li>
-<li>${name} Full Movie Download 420p</li>
-<li>${name} Full Movie Download 1080p</li>
-<li>${name} Full Movie Download DVDscr</li>
-<li>${name} Full Movie Download DVDrip</li>
-<li>${name} Full Movie Download Hindi Dubbed</li>
-    </ul>
-
-
-
+<p>There is no restriction on downloading movies from Tamilyogi. The film can be downloaded in HD quality and in all file formats. The content which is uploaded on the torrent website Tamilyogi is all pirated content.</p><p><br /></p><p>In Short, after the ${name} movie is released, it was illegally uploaded on the Piracy website, from where a large number of people downloaded the movies. Even before this, this has been seen many times with movies, as soon as they are released, after some time it is uploaded on the movie downloading site in some way or the other. From where a large number of people download that movie.</p>  <div class="down"><h2 style="text-align: center;"><span style="color: red;">${name} Full Movie Download Links</span></h2><p style="text-align: center;"><b>Size: <a href="https://file.dvdplay1.com/">400MB</a> || <a href="https://file.dvdplay1.com/">1.2GB</a> || <a href="https://file.dvdplay1.com/">2.5GB</a> || <a href="https://file.dvdplay1.com/">4.79GB</a></b></p></div><h3 style="text-align: left;">People search the following sites on Google for Free Movie downloads</h3><div><br /></div><div>9kMovies, Khatrimazafull, aFilmywap, iBomma, DVDVilla, FilmyZilla, FilmyWap, Filmymeet, Isaiminiya, WorldFree4u, BollyVerse, MovieVerse, Gomovies, FilmyGod, Divyanet, 123movies, Extramovies, Filmyhit, 7starhd, Teluguwap, Kuttymovies, Gomovies, Pagalworld, Moviesda, Djpunjab, Todaypk, 9xmoviesk, Tamilyogi, 123movies, Isaimini, Movierulz, Tamilrockers, DVDPLay, KLwap, DVDPLex, Mallumv.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download HD Filmyhit</h3><div><br /></div><div>Filmyhit is a pirated content provided and torrent website that allows the users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Filmyhit.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download in Movierulz</h3><div>Movierulz is a public torrent website that leaks pirated movies online. The website Movierulz uploads pirated versions of Hindi, Telugu, Tamil, English, Malayalam, and other language movies on their site. That’s why many people search on the internet for ${name} Full Movie Movierulz.</div><div><br /></div><div><h3 style="text-align: left;">${name} Full Movie download 123mkv 720p</h3><div>123mkv is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie 123mkv.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download HD Filmyzilla 480p</h3><div>Filmyzilla is a pirated content provided and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Filmyzilla.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download jiorockers 1080p</h3><div>Many people like to watch movies. That’s why people have started looking for different ways to download movies on the internet. Now there are many such websites on Google that give movies to people for free. That’s why many people search on the internet for ${name} Full Movie jiorockers.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download in KLwap 300 MB</h3><div>KLwap is a piracy website that illegally provides pirated latest Telugu, Tamil, Malayalam, and Bollywood movies online for HD download. KLwap is a torrent website that is immensely popular among south Indian movie fans.</div><div><br /></div><div>It is a desi version of the internationally notorious Pirate Bay from where one can download mostly South Indian movies and other content for free via a torrent client. Various popular Telugu, Telugu, Malayalam, and other language movies are routinely uploaded on the site. Although the URL itself is blocked by the government, KLwap can be easily accessed by proxy servers. That’s why many people search on the internet for ${name} Full Movie KLwap.</div><div><br /></div><h3 style="text-align: left;">${name} Full&nbsp; movie download hd Filmywap 1080p</h3><div>Filmywap is a public torrent website that leaks pirated Hindi, English, and Punjabi movies online. The website Filmywap uploads pirated versions of Bollywood, Hollywood, Tollywood, and movies from other industries on their site. That’s why many people search on the internet for ${name} Full Movie Filmywap.</div></div><div><br /></div><div><h3 style="text-align: left;">${name} movie download khatrimaza 300 MB</h3><div>Khatrimaza is a pirated content provided and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie khatrimaza.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download 9xmovies 720p</h3><div>9xmovies is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie 9xmovies.</div><h3 style="text-align: left;"><br />${name} Full Movie download Mallumv 300 MB</h3><div>Mallumv is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name}&nbsp;Full Movie Mallumv.</div><h3 style="text-align: left;"><br />${name} Full Movie Download in Tamilrockers 1080p</h3><div>Tamilrockers is a piracy website that illegally provides pirates latest Telugu, Tamil,&nbsp; Malayalam, and Bollywood movies online for HD download. Tamilrockers is a torrent website that is immensely popular among south Indian movie fans.</div><div><br /></div><div>It is a desi version of the internationally notorious Pirate Bay from where one can mostly South Indian movies and other content for free via a torrent client. Various popular Tamil, Telugu,&nbsp; Malayalam, and other language movies are routinely uploaded on the site. Although the URL itself is blocked by the government, Tamilrockers can be easily accessed by proxy servers. That’s why many people search on the internet for ${name} Full Movie Tamilrockers.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download Kuttymovies 300 MB</h3><div>Kuttymovies is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Kuttymovies.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download Moviesflix 1080p</h3><div>Moviesflix is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Moviesflix.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download hd 7starhd 480p</h3><div>7starhd is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie 7starhd.</div><div><br /></div><h3 style="text-align: left;">${name} movie download hd Telegram Link</h3><div>Some people pirated ${name}movie and they will upload it to Telegram which allows the users to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Telegram Link. This type of link may harm your device and it can cause your data leak.</div><div><br /></div><h3 style="text-align: left;">${name} movie download Skymovieshd 720p</h3><div>Skymovieshd is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Skymovieshd.</div></div><div><br /></div><div><h3 style="text-align: left;">${name} movie download Coolmoviez 480p</h3><div>Coolmoviez is a pirate content provider and torrent website that allows the users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Coolmoviez.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download HD Filmymeet 1080p</h3><div>Many people like to watch movies. That’s why people have started looking for different ways to download movies on the internet. Now there are many such websites on Google that give movies to people for free. This is the reason why many people search the internet to watch ${name} Full Movie uTorrent, New Unrelesed Filmymeet. That’s why many people search on the internet for Khuda Haafiz Chapter 2: Agni Pariksha Full Movie Filmymeet.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download Isaimini 720p</h3><div>Isaimini is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Isaimini.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download hd hdhub4u 480p</h3><div>hdhub4u is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie hdhub4u.</div></div>
 
 	`;
 	
@@ -405,4 +327,3 @@ function copyToClipboard(element) {
  </script>
 </body>
 </html>
-
