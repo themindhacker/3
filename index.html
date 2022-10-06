@@ -5,6 +5,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +53,7 @@ body {
 
 
 .navbar {
-  background-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+  background-image: linear-gradient(to right, #000, #000, #000, #000, #000);
   display: block;
   border-radius: 0px;
   padding: none;
@@ -92,7 +93,7 @@ h1 {
 
 h2 {
   font-size: 20px;
-  background-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+  background-image: linear-gradient(to right, #000, #000, #000, #000, #000);
   color: #FFF;
   padding: 15px;
   box-shadow: 0 2px 10px 0 #cac9c9;
@@ -104,7 +105,7 @@ h3 {
 }
 
 button {
-  background-color: #ff0000; /* Green */
+  background-color: #000; /* Green */
   color: white;
   padding: 10px 80px;
   text-align: center;
@@ -119,13 +120,13 @@ button {
 
 button:hover {
   background-color: #fff;
-  color: #ff0000;
-  border: 3px solid #ff0000;
+  color: #000;
+  border: 3px solid #000;
 }
 
 
 footer {
-  background-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+  background-image: linear-gradient(to right, #000, #000, #000, #000, #000);
   color: #000;
   text-align: center;
   margin-top: 10px;
@@ -145,7 +146,7 @@ footer {
 }
 .item {
   text-decoration: none;
-  background: #ff0000;
+  background: #000;
   margin-left: 2px;
   color: #fff;
   padding: 10px 20px;
@@ -158,7 +159,7 @@ footer {
 
 .item:hover {
   text-decoration: none;
-  background: #ff0000;
+  background: #000;
   color: #000;
 }
 
@@ -228,8 +229,7 @@ li {
   margin-bottom: 5px;
 }
 	</style>
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
-<meta name='google-adsense-platform-domain' content='blogspot.com' />
+
 </head>
 <body>
 <nav class="navbar">
@@ -259,8 +259,35 @@ li {
 <label>Language</label>
 <input value="Malayalam" id="lang" type="text" />
 </div>
-
-
+<div class="generator__questions">
+  <label>Director</label>
+  <input value="" id="Director" type="text" />
+  </div>
+  <div class="generator__questions">
+    <label>Starring</label>
+    <input value="" id="Starring" type="text" />
+    </div>
+    <div class="generator__questions">
+      <label>Genres</label>
+      <input value="" id="Genres" type="text" />
+      </div>
+      <div class="generator__questions">
+        <label>Rating</label>
+        <input value="" id="Rating" type="text" />
+        </div>
+        <div class="generator__questions">
+          <label>Release Date</label>
+          <input value="" id="date" type="text" />
+          </div>
+          <div class="generator__questions">
+            <label>File Size</label>
+            <input value="400MB, 700MB, 1.2GB" id="size" type="text" />
+            </div>
+            <div class="generator__questions">
+              <label>Synopsis</label>
+              <textarea value="" id="synopsis" type="text" style="width: 368px; height: 192px;"></textarea>
+              </div>
+          
 <div class="generator__questions" style="text-align: center;"><br />
 </div>
 <div class="generator__questions" style="text-align: center;"><br />
@@ -295,21 +322,54 @@ generate.addEventListener('click', () => {
 	const name = document.querySelector('#name').value;
 	const lang = document.querySelector('#lang').value;
     const urlimg = document.querySelector('#urlimg').value;
-
+    const Director = document.querySelector('#Director').value;
+    const Starring = document.querySelector('#Starring').value;
+    const Genres = document.querySelector('#Genres').value;
+    const Rating = document.querySelector('#Rating').value;
+    const date = document.querySelector('#date').value;
+    const size = document.querySelector('#size').value;
+    const synopsis = document.querySelector('#synopsis').value;
 	const markupContainer = document.querySelector('.generator__markup-generated');
 	
 	const markup = `
 
 
-    <center>
-    <img alt="${name} Full Movie Download" title="${name} Full Movie Download" src="${urlimg}"/>
-    </center>
-    <p>${name} Movie Download vegamovies HD ${lang} 480p 720p 1080p HD 300 MB | ${name} Movie Dual audio ${lang} HD filmyzilla,</p><p><br /></p>
+  <div class="dvd">Movie Information</div>
+<img alt="${name} (2022) Full Movie Download" title="${name} (2022) Full Movie Download" class="poster-img" src="${urlimg}"/>
+<table>
 
-<p>Hello Friends in this article we are going to know about ${name} movie download. Nowadays usage of torrent websites is increasing as many people watch movies on torrent websites for free. Yes, likewise the popular movie ${name} got leaked on Tamilyogi. This torrent website is popular for leaking Tamil, Telugu, and Bollywood Movies. Users can download all the movies and other content for free from Tamilyogi.</p><p><br /></p>
-
-<p>There is no restriction on downloading movies from Tamilyogi. The film can be downloaded in HD quality and in all file formats. The content which is uploaded on the torrent website Tamilyogi is all pirated content.</p><p><br /></p><p>In Short, after the ${name} movie is released, it was illegally uploaded on the Piracy website, from where a large number of people downloaded the movies. Even before this, this has been seen many times with movies, as soon as they are released, after some time it is uploaded on the movie downloading site in some way or the other. From where a large number of people download that movie.</p>  <div class="down"><h2 style="text-align: center;"><span style="color: red;">${name} Full Movie Download Links</span></h2><p style="text-align: center;"><b>Size: <a href="https://file.dvdplay1.com/">400MB</a> || <a href="https://file.dvdplay1.com/">1.2GB</a> || <a href="https://file.dvdplay1.com/">2.5GB</a> || <a href="https://file.dvdplay1.com/">4.79GB</a></b></p></div><h3 style="text-align: left;">People search the following sites on Google for Free Movie downloads</h3><div><br /></div><div>9kMovies, Khatrimazafull, aFilmywap, iBomma, DVDVilla, FilmyZilla, FilmyWap, Filmymeet, Isaiminiya, WorldFree4u, BollyVerse, MovieVerse, Gomovies, FilmyGod, Divyanet, 123movies, Extramovies, Filmyhit, 7starhd, Teluguwap, Kuttymovies, Gomovies, Pagalworld, Moviesda, Djpunjab, Todaypk, 9xmoviesk, Tamilyogi, 123movies, Isaimini, Movierulz, Tamilrockers, DVDPLay, KLwap, DVDPLex, Mallumv.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download HD Filmyhit</h3><div><br /></div><div>Filmyhit is a pirated content provided and torrent website that allows the users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Filmyhit.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download in Movierulz</h3><div>Movierulz is a public torrent website that leaks pirated movies online. The website Movierulz uploads pirated versions of Hindi, Telugu, Tamil, English, Malayalam, and other language movies on their site. That’s why many people search on the internet for ${name} Full Movie Movierulz.</div><div><br /></div><div><h3 style="text-align: left;">${name} Full Movie download 123mkv 720p</h3><div>123mkv is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie 123mkv.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download HD Filmyzilla 480p</h3><div>Filmyzilla is a pirated content provided and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Filmyzilla.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download jiorockers 1080p</h3><div>Many people like to watch movies. That’s why people have started looking for different ways to download movies on the internet. Now there are many such websites on Google that give movies to people for free. That’s why many people search on the internet for ${name} Full Movie jiorockers.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download in KLwap 300 MB</h3><div>KLwap is a piracy website that illegally provides pirated latest Telugu, Tamil, Malayalam, and Bollywood movies online for HD download. KLwap is a torrent website that is immensely popular among south Indian movie fans.</div><div><br /></div><div>It is a desi version of the internationally notorious Pirate Bay from where one can download mostly South Indian movies and other content for free via a torrent client. Various popular Telugu, Telugu, Malayalam, and other language movies are routinely uploaded on the site. Although the URL itself is blocked by the government, KLwap can be easily accessed by proxy servers. That’s why many people search on the internet for ${name} Full Movie KLwap.</div><div><br /></div><h3 style="text-align: left;">${name} Full&nbsp; movie download hd Filmywap 1080p</h3><div>Filmywap is a public torrent website that leaks pirated Hindi, English, and Punjabi movies online. The website Filmywap uploads pirated versions of Bollywood, Hollywood, Tollywood, and movies from other industries on their site. That’s why many people search on the internet for ${name} Full Movie Filmywap.</div></div><div><br /></div><div><h3 style="text-align: left;">${name} movie download khatrimaza 300 MB</h3><div>Khatrimaza is a pirated content provided and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie khatrimaza.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download 9xmovies 720p</h3><div>9xmovies is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie 9xmovies.</div><h3 style="text-align: left;"><br />${name} Full Movie download Mallumv 300 MB</h3><div>Mallumv is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name}&nbsp;Full Movie Mallumv.</div><h3 style="text-align: left;"><br />${name} Full Movie Download in Tamilrockers 1080p</h3><div>Tamilrockers is a piracy website that illegally provides pirates latest Telugu, Tamil,&nbsp; Malayalam, and Bollywood movies online for HD download. Tamilrockers is a torrent website that is immensely popular among south Indian movie fans.</div><div><br /></div><div>It is a desi version of the internationally notorious Pirate Bay from where one can mostly South Indian movies and other content for free via a torrent client. Various popular Tamil, Telugu,&nbsp; Malayalam, and other language movies are routinely uploaded on the site. Although the URL itself is blocked by the government, Tamilrockers can be easily accessed by proxy servers. That’s why many people search on the internet for ${name} Full Movie Tamilrockers.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download Kuttymovies 300 MB</h3><div>Kuttymovies is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Kuttymovies.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download Moviesflix 1080p</h3><div>Moviesflix is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Moviesflix.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download hd 7starhd 480p</h3><div>7starhd is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie 7starhd.</div><div><br /></div><h3 style="text-align: left;">${name} movie download hd Telegram Link</h3><div>Some people pirated ${name}movie and they will upload it to Telegram which allows the users to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Telegram Link. This type of link may harm your device and it can cause your data leak.</div><div><br /></div><h3 style="text-align: left;">${name} movie download Skymovieshd 720p</h3><div>Skymovieshd is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Skymovieshd.</div></div><div><br /></div><div><h3 style="text-align: left;">${name} movie download Coolmoviez 480p</h3><div>Coolmoviez is a pirate content provider and torrent website that allows the users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Coolmoviez.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie Download HD Filmymeet 1080p</h3><div>Many people like to watch movies. That’s why people have started looking for different ways to download movies on the internet. Now there are many such websites on Google that give movies to people for free. This is the reason why many people search the internet to watch ${name} Full Movie uTorrent, New Unrelesed Filmymeet. That’s why many people search on the internet for Khuda Haafiz Chapter 2: Agni Pariksha Full Movie Filmymeet.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download Isaimini 720p</h3><div>Isaimini is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie Isaimini.</div><div><br /></div><h3 style="text-align: left;">${name} Full Movie download hd hdhub4u 480p</h3><div>hdhub4u is a pirate content provider and torrent website that allows users access to thousands of the latest Bollywood, south, and Hollywood movies, TV shows, and other regional content. That’s why many people search on the internet for ${name} Full Movie hdhub4u.</div></div>
-
+  <tbody><tr><td><b>Movie</b></td><td>${name} (2022)</td></tr>
+  
+  <tr><td><b>Director</b></td><td>${Director}</td></tr>
+  
+  <tr><td><b>Starring</b></td><td>${Starring}</td></tr>
+  
+  <tr><td><b>Genres</b></td><td>${Genres}</td></tr>
+  
+  <tr><td><b>Quality</b></td><td>HQ PreDVD</td></tr>
+  
+  <tr><td><b>Language</b></td><td>${lang}</td></tr>
+  
+  <tr><td><b>Rating</b></td><td>${Rating}</td></tr>
+  
+    <tr><td><b>Release Date</b></td><td>${date}</td></tr>
+  <tr><td><b>File Size</b></td><td>${size}</td></tr>
+</tbody></table>
+<div class="story-line"><strong>Synopsis:</strong> ${synopsis}</div>
+<div class="dvd1">${name} (2022)</div>
+<div class="down">
+<div  class="links"> <img class="icons" title="${name} (2022) Full Movie Download" src="https://file.dvdplay1.com/dir.gif" alt="${name} (2022) Full Movie Download"> <a href="https://file.dvdplay1.com/">${name} (Original)</a> </div>
+  </div>
+<div class="tags">Page Tags :</div>
+<font color="green">${name} Movie Download, ${name} Movie DVDPLay Download, ${name} 2022 ${lang} Movie Download, ${name} 2022  Movie KLwap Download, ${name} Full Movie Download, ${name} 720p HD Movie Download, ${name} 1080p Mp4 Movie Download</font>
+<ul>
+  <li>${name} 2022  DVDPLay Download</li>
+  <li>${name} 2022  isaimini Download</li>
+  <li>${name} 2022  Kuttymovies Download</li>
+  <li>${name} 2022  KLwap Download</li>
+  <li>${name} 2022  TamilRockers Download</li>
+  <li>${name} 2022  TamilPlay Download</li>
+</ul>
 	`;
 	
 	markupContainer.textContent = markup;
