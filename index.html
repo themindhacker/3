@@ -272,8 +272,12 @@ li {
       <input value="" id="Genres" type="text" />
       </div>
       <div class="generator__questions">
+        <label>Quality</label>
+        <input value="HQ PreDVD" id="Quality" type="text" />
+        </div>
+      <div class="generator__questions">
         <label>Rating</label>
-        <input value="" id="Rating" type="text" />
+        <input value="/10" id="Rating" type="text" />
         </div>
         <div class="generator__questions">
           <label>Release Date</label>
@@ -329,6 +333,7 @@ generate.addEventListener('click', () => {
     const date = document.querySelector('#date').value;
     const size = document.querySelector('#size').value;
     const synopsis = document.querySelector('#synopsis').value;
+    const Quality = document.querySelector('#Quality').value;
 	const markupContainer = document.querySelector('.generator__markup-generated');
 	
 	const markup = `
@@ -346,7 +351,7 @@ generate.addEventListener('click', () => {
   
   <tr><td><b>Genres</b></td><td>${Genres}</td></tr>
   
-  <tr><td><b>Quality</b></td><td>HQ PreDVD</td></tr>
+  <tr><td><b>Quality</b></td><td>${Quality}</td></tr>
   
   <tr><td><b>Language</b></td><td>${lang}</td></tr>
   
