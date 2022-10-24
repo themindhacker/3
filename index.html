@@ -259,10 +259,6 @@ li {
 <label>Language</label>
 <input value="Malayalam" id="lang" type="text" />
 </div>
-<div class="generator__questions">
-  <label>Director</label>
-  <input value="" id="Director" type="text" />
-  </div>
   <div class="generator__questions">
     <label>Starring</label>
     <input value="" id="Starring" type="text" />
@@ -326,7 +322,6 @@ generate.addEventListener('click', () => {
 	const name = document.querySelector('#name').value;
 	const lang = document.querySelector('#lang').value;
     const urlimg = document.querySelector('#urlimg').value;
-    const Director = document.querySelector('#Director').value;
     const Starring = document.querySelector('#Starring').value;
     const Genres = document.querySelector('#Genres').value;
     const Rating = document.querySelector('#Rating').value;
@@ -344,8 +339,6 @@ generate.addEventListener('click', () => {
 <table>
 
   <tbody><tr><td><b>Movie</b></td><td>${name} (2022)</td></tr>
-  
-  <tr><td><b>Director</b></td><td>${Director}</td></tr>
   
   <tr><td><b>Starring</b></td><td>${Starring}</td></tr>
   
