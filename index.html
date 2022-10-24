@@ -275,10 +275,6 @@ li {
         <label>Rating</label>
         <input value="/10" id="Rating" type="text" />
         </div>
-        <div class="generator__questions">
-          <label>Release Date</label>
-          <input value="" id="date" type="text" />
-          </div>
           <div class="generator__questions">
             <label>File Size</label>
             <input value="400MB, 700MB, 1.2GB" id="size" type="text" />
@@ -325,7 +321,6 @@ generate.addEventListener('click', () => {
     const Starring = document.querySelector('#Starring').value;
     const Genres = document.querySelector('#Genres').value;
     const Rating = document.querySelector('#Rating').value;
-    const date = document.querySelector('#date').value;
     const size = document.querySelector('#size').value;
     const synopsis = document.querySelector('#synopsis').value;
     const Quality = document.querySelector('#Quality').value;
@@ -350,7 +345,6 @@ generate.addEventListener('click', () => {
   
   <tr><td><b>Rating</b></td><td>${Rating}</td></tr>
   
-    <tr><td><b>Release Date</b></td><td>${date}</td></tr>
   <tr><td><b>File Size</b></td><td>${size}</td></tr>
 </tbody></table>
 <div class="story-line"><strong>Synopsis:</strong> ${synopsis}</div>
