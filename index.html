@@ -1,381 +1,91 @@
 
-
-
-
-
-
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Post Generator</title>
-<link href='https://eng.dvdplaymv.com/android-chrome-512x512.png' rel='icon' sizes='512x512' type='image/png' />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto';
-  display: block;
-  background: #e0e0e0;
-  font-size: 16px;
-}
-
-.btn {
-  line-height: 24px;
-  height: 36px;
-  font-size: 15px;
-  vertical-align: top;
-}
-
-.body {
-  max-width: 800px;
-  margin: auto;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 2px 10px 0 #cac9c9;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
+   <head>
 
 
-.navbar {
-  background-image: linear-gradient(to right, #000, #000, #000, #000, #000);
-  display: block;
-  border-radius: 0px;
-  padding: none;
-  color: #000;
-  box-shadow: 0px 0px 15px 0 rgb(0 0 0 / 23%);
-  border-bottom: 3px solid #fff;
-  font-size: 24px;
-  user-select: none;
-  cursor: pointer;
-}
-.navbar-brand {
-  font-size: 24px;
-  color: #FFF;
-  user-select: none;
-  cursor: pointer;
-}
+ <link href="https://www.dvdplex.info/favicon.ico" rel='icon' type='image/x-icon' />
+ <title>Post</title>
+      <meta content='noindex,follow' name='googlebot' />
+      <meta content='noindex,nofollow,noodp,noydir' name='robots' />
+      <meta content='width=device-width, initial-scale=1' name='viewport' />
+      <style>
+         #dlbox {
+         margin:auto;
+         padding:4px;
+         background:#F6F6F6;
+         clear:both;
+         border:1px solid #ccc;
+         position: relative;
+         height:auto;
+         width:95%;
+         max-width:460px;
+         }
+         #dlbox h4 {
+         font-size:20px;
+         font-family: sans-serif;
+         padding:10px;
+         text-align:center;
+         height:auto;
+         margin: auto;
+         }
+a{color:#1cab00;
+text-decoration: none;
+		 }
+         .button {
+         background-color: #1cab00;
+         height:auto;
+         width:90%;
+         color: #fff;
+   
+         padding: 12px;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         cursor: pointer;
+        border: 2px solid #1cab00;
+         }
+         .button:hover {
+         background-color: #fff;
+         color: #000;
+         border: 2px solid #1cab00;
+         }
 
-.navbar-brand:hover {
-  font-size: 24px;
-  color: #fff;
-}
+      </style>
 
-
-p {
-  text-align: left;
-  padding-left: 20px;
-  padding-right: 10px;
-  margin-bottom: 15px;
-  line-height: 1.4em;
-}
-
-h1 {
-  font-size: 24px;
-  text-align: center;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 20px;
-  background-image: linear-gradient(to right, #000, #000, #000, #000, #000);
-  color: #FFF;
-  padding: 15px;
-  box-shadow: 0 2px 10px 0 #cac9c9;
-  font-weight: 600;
-}
-h3 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-button {
-  background-color: #000; /* Green */
-  color: white;
-  padding: 10px 80px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-      font-size: inherit;
-    line-height: inherit;
-  box-shadow: 0px 7px 10px 0 rgb(0 0 0 / 33%);
-  border: 3px solid #fff;
-  border-radius: 60px;
-}
-
-button:hover {
-  background-color: #fff;
-  color: #000;
-  border: 3px solid #000;
-}
+  </head>
 
 
-footer {
-  background-image: linear-gradient(to right, #000, #000, #000, #000, #000);
-  color: #000;
-  text-align: center;
-  margin-top: 10px;
-  overflow: hidden;
-  position: relative;
-  user-select: none;
-}
-.itemd {
-  max-width: 100%;
-    display: inline-block;
-    vertical-align: bottom;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    user-select: none;
-    text-decoration: none;
-}
-.item {
-  text-decoration: none;
-  background: #000;
-  margin-left: 2px;
-  color: #fff;
-  padding: 10px 20px;
-  display: inline-flex;
+   <body>
 
-    flex-shrink: 0!important;
-    cursor: pointer;
-    user-select: none;
-}
+      <div id="dlbox" >
+         <h4>Choose Quality</h4>
+		
+	         
+         <a  target="_blank" href="/post1.html"  >
+         <span>Post 1</span></a>
+         <br/>
+         <br/>
+         <a  target="_blank" href="/post2.html"   >
+         <span>Post 2</span></a>
+         <br/>
+         <br/>
+         <a   target="_blank" href="/post3.html"    >
+         <span>Post 3</span></a>
+        <br/>
+         <br/>
+         <a   target="_blank" href="/post4.html"    >
+            <span>Post 4</span></a>
+           <br/>
+            <br/>
+            <a   target="_blank" href="/post5.html"    >
+                <span>Post 5</span></a>
+               <br/>
+                <br/>
 
-.item:hover {
-  text-decoration: none;
-  background: #000;
-  color: #000;
-}
-
-.active, .item:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.btn {
-  line-height: 24px;
-  height: 36px;
-  font-size: 15px;
-  vertical-align: top;
-}
-
-.from {
-  text-align: center;
-  max-width: 400px;
-  margin: auto;
-    border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  box-shadow: 0 2px 10px 0 #cac9c9;
-}
-
-.content {
-  background: #fff;
-}
-
-.center {
-  max-width: 400px;
-  margin: auto;
-}
-
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-ul {
-  text-align: left;
-  padding: 20px;
-  margin-left: 30px;
-}
-
-li {
-  margin-bottom: 5px;
-}
-	</style>
-
-</head>
-<body>
-<nav class="navbar">
-<a class="navbar-brand" href="/">Post Genarator</a>
-</nav>
-<div></div>
-<center>
-<div class="itemd">
-</div>
-</center>
-
-<div class="body">
-<div class="generator">
-
-<hr>
-<div class="from">
-    <div class="generator__questions">
-        <label>Image URL</label>
-        <input id="urlimg" type="text" placeholder="/img.jpg" />
-    </div>
-<div class="generator__questions">
-<label>Movie Name</label>
-<input id="name" type="text" placeholder="KGF" />
-</div>
-
-<div class="generator__questions">
-<label>Language</label>
-<input value="Malayalam" id="lang" type="text" />
-</div>
-  <div class="generator__questions">
-    <label>Starring</label>
-    <input value="" id="Starring" type="text" />
-    </div>
-    <div class="generator__questions">
-      <label>Genres</label>
-      <input value="" id="Genres" type="text" />
       </div>
-      <div class="generator__questions">
-        <label>Quality</label>
-        <input value="HQ PreDVD" id="Quality" type="text" />
-        </div>
-      <div class="generator__questions">
-        <label>Rating</label>
-        <input value="/10" id="Rating" type="text" />
-        </div>
-          <div class="generator__questions">
-            <label>File Size</label>
-            <input value="400MB, 700MB, 1.2GB" id="size" type="text" />
-            </div>
-            <div class="generator__questions">
-              <label>Synopsis</label>
-              <textarea value="" id="synopsis" type="text" style="width: 368px; height: 192px;"></textarea>
-              </div>
-          
-<div class="generator__questions" style="text-align: center;"><br />
-</div>
-<div class="generator__questions" style="text-align: center;"><br />
-</div>
-</div>
-<br>
-<div class="generator__questions" style="text-align: center;">&nbsp;
-<button class="generate-markup">Generate</button>
-</div></br>
-<div class="generator__markup">
-<h2 style="text-align: center;">HIHI</h2>
-<pre><div style="text-align: center;"></div>
-      <p id="p2"><code class="generator__markup-generated"></code></p>
-      <div style="text-align: center;"></div>
-</pre>
-<center>
-<button onclick="copyToClipboard('#p2')">📋 COPY</button></center></div></div>
-<hr>
-</div>
-<center>
-
-<footer>
-<div class="itemd">
-<a class="item" href="/">Created by Udayip</a>
-</div>
-</footer>
-<script type='text/javascript'>  
-  //<![CDATA[
-const generate = document.querySelector('.generate-markup');
-
-generate.addEventListener('click', () => {
-	const name = document.querySelector('#name').value;
-	const lang = document.querySelector('#lang').value;
-    const urlimg = document.querySelector('#urlimg').value;
-    const Starring = document.querySelector('#Starring').value;
-    const Genres = document.querySelector('#Genres').value;
-    const Rating = document.querySelector('#Rating').value;
-    const size = document.querySelector('#size').value;
-    const synopsis = document.querySelector('#synopsis').value;
-    const Quality = document.querySelector('#Quality').value;
-	const markupContainer = document.querySelector('.generator__markup-generated');
-	
-	const markup = `
+ 
 
 
-  <div class="dvd">Movie Information</div>
-<img alt="${name} (2022) Full Movie Download" title="${name} (2022) Full Movie Download" class="poster-img" src="${urlimg}"/>
-<table>
-
-  <tbody><tr><td><b>Movie</b></td><td>${name} (2022)</td></tr>
-  
-  <tr><td><b>Starring</b></td><td>${Starring}</td></tr>
-  
-  <tr><td><b>Genres</b></td><td>${Genres}</td></tr>
-  
-  <tr><td><b>Quality</b></td><td>${Quality}</td></tr>
-  
-  <tr><td><b>Language</b></td><td>${lang}</td></tr>
-  
-  <tr><td><b>Rating</b></td><td>${Rating}</td></tr>
-  
-  <tr><td><b>File Size</b></td><td>${size}</td></tr>
-</tbody></table>
-<div class="story-line"><strong>Synopsis:</strong> ${synopsis}</div>
-<div class="dvd1">${name} (2022)</div>
-<div class="down">
-<div  class="links"> <img class="icons" title="${name} (2022) Full Movie Download" src="https://files.dvdplaymv.com/dir.gif" alt="${name} (2022) Full Movie Download"> <a href="https://files.dvdplaymv.com/">${name} (${Quality})</a> </div>
-  </div>
-<div class="tags">Page Tags :</div>
-<font color="green">${name} Movie Download, ${name} Movie DVDPLay Download, ${name} 2022 ${lang} Movie Download, ${name} 2022  Movie KLwap Download, ${name} Full Movie Download, ${name} 720p HD Movie Download, ${name} 1080p Mp4 Movie Download</font>
-<ul>
-  <li>${name} 2022  DVDPLay Download</li>
-  <li>${name} 2022  isaimini Download</li>
-  <li>${name} 2022  Kuttymovies Download</li>
-  <li>${name} 2022  KLwap Download</li>
-  <li>${name} 2022  TamilRockers Download</li>
-  <li>${name} 2022  TamilPlay Download</li>
-</ul>
-	`;
-	
-	markupContainer.textContent = markup;
-});
-
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
-
-//]]>
- </script>
 </body>
 </html>
