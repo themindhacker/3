@@ -1,0 +1,367 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post Generator</title>
+<link href='https://eng.dvdplaymv.com/android-chrome-512x512.png' rel='icon' sizes='512x512' type='image/png' />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  display: block;
+  background: #e0e0e0;
+  font-size: 16px;
+}
+
+.btn {
+  line-height: 24px;
+  height: 36px;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.body {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px 0 #cac9c9;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+.navbar {
+  background-image: linear-gradient(to right, #000, #000, #000, #000, #000);
+  display: block;
+  border-radius: 0px;
+  padding: none;
+  color: #000;
+  box-shadow: 0px 0px 15px 0 rgb(0 0 0 / 23%);
+  border-bottom: 3px solid #fff;
+  font-size: 24px;
+  user-select: none;
+  cursor: pointer;
+}
+.navbar-brand {
+  font-size: 24px;
+  color: #FFF;
+  user-select: none;
+  cursor: pointer;
+}
+
+.navbar-brand:hover {
+  font-size: 24px;
+  color: #fff;
+}
+
+
+p {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  background-image: linear-gradient(to right, #000, #000, #000, #000, #000);
+  color: #FFF;
+  padding: 15px;
+  box-shadow: 0 2px 10px 0 #cac9c9;
+  font-weight: 600;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+button {
+  background-color: #000; /* Green */
+  color: white;
+  padding: 10px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+      font-size: inherit;
+    line-height: inherit;
+  box-shadow: 0px 7px 10px 0 rgb(0 0 0 / 33%);
+  border: 3px solid #fff;
+  border-radius: 60px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 3px solid #000;
+}
+
+
+footer {
+  background-image: linear-gradient(to right, #000, #000, #000, #000, #000);
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+.itemd {
+  max-width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    text-decoration: none;
+}
+.item {
+  text-decoration: none;
+  background: #000;
+  margin-left: 2px;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-flex;
+
+    flex-shrink: 0!important;
+    cursor: pointer;
+    user-select: none;
+}
+
+.item:hover {
+  text-decoration: none;
+  background: #000;
+  color: #000;
+}
+
+.active, .item:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn {
+  line-height: 24px;
+  height: 36px;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.from {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+    border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 2px 10px 0 #cac9c9;
+}
+
+.content {
+  background: #fff;
+}
+
+.center {
+  max-width: 400px;
+  margin: auto;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+ul {
+  text-align: left;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+	</style>
+
+</head>
+<body>
+<nav class="navbar">
+<a class="navbar-brand" href="/">Post 1</a>
+</nav>
+<div></div>
+<center>
+<div class="itemd">
+</div>
+</center>
+
+<div class="body">
+<div class="generator">
+
+<hr>
+<div class="from">
+
+<div class="generator__questions">
+<label>Movie Name</label>
+<input id="name" type="text" placeholder="KGF" />
+</div>
+<div class="generator__questions">
+    <label>Image URL</label>
+    <input id="url" type="text" placeholder="/img.jpg" />
+</div>
+          
+<div class="generator__questions" style="text-align: center;"><br />
+</div>
+<div class="generator__questions" style="text-align: center;"><br />
+</div>
+</div>
+<br>
+<div class="generator__questions" style="text-align: center;">&nbsp;
+<button class="generate-markup">Generate</button>
+</div></br>
+<div class="generator__markup">
+<h2 style="text-align: center;">HIHI</h2>
+<pre><div style="text-align: center;"></div>
+      <p id="p2"><code class="generator__markup-generated"></code></p>
+      <div style="text-align: center;"></div>
+</pre>
+<center>
+<button onclick="copyToClipboard('#p2')">📋 COPY</button></center></div></div>
+<hr>
+</div>
+<center>
+
+<footer>
+<div class="itemd">
+<a class="item" href="/">Created by Udayip</a>
+</div>
+</footer>
+<script type='text/javascript'>  
+  //<![CDATA[
+const generate = document.querySelector('.generate-markup');
+
+generate.addEventListener('click', () => {
+	const name = document.querySelector('#name').value;
+	const url = document.querySelector('#url').value;
+
+	const markupContainer = document.querySelector('.generator__markup-generated');
+	
+	const markup = `
+
+
+    <h2 style="text-align: left;">${name} Movie Download 1080p 720p 480p</h2>
+<div>
+    <div style="text-align: left;">${name} Movie Download Ibomma, Jiorockers, Tamilrockers 1080p 720p 480p Bluray Kuttymovies Pagalmovies Filmywap Movie4K Tamilmv Ibomma Isaimini Filmymeet Moviesflix Filmyhit Telegram Link Vegamovies Isaimni Tamilrockers</div>
+    <div style="text-align: left;"><br /></div>
+    <div style="text-align: left;"><b>Note:</b> We never support or promote any piracy content.</div>
+    <div style="text-align: left;"><br /></div>
+    <img alt="${name} Movie Download" title="${name} Movie Download" class="dvdplex-img" src="${url}"/>
+    <h2 style="text-align: left;">${name} Movie Download DVDPLay</h2>
+</div>
+<div>DVDPLay website leaks Malayalam, Hindi, and Hollywood movies. The Movie download can be accessed through this site, which is also in HD quality. However, pirating films and downloading pirated films is a crime that is illegal and comes with a promise
+    of severe punishment for doing this.</div>
+
+
+<center>
+    <div class="down">
+        <a class="button" href="https://drive.dvdplex.info/">Download Now</a>
+    </div>
+</center>
+
+<h2 style="text-align: left;">${name} Movie Download Moviesflix</h2>
+<div>Moviesflix dates all sorts of movies to date in Full HD factor. The users may see the movies and can get information about them from our article. Hence, it is illegal to support pirated content so we neither support nor promote it. Supporting it may turn
+    you to be get punished and can be hanged in prison so beware of it. Just enjoy the Movie download.</div>
+
+
+
+<h2 style="text-align: left;">${name} Movie Download Movie4K</h2>
+<div>All things are illegal if you go without permission, If you want to truly watch you go on the OTT platform and enjoy many movies and web series.&nbsp;</div>
+<div><br /></div>
+<div><b>Isaimini</b> has released movie leaks in Hollywood, Bollywood, Southern, and other languages up to now. These sites offer many options, including the Movie download of HD printing, 720p 300Mb, 480p, 1080p, and 480p. However, it is illegal to pirate films
+    and Download pirated ones, which is why we don’t support pirated films at all.</div>
+<h2 style="text-align: left;">${name} Movie Download Telegram Link</h2>
+<div>Telegram is also an enormous medium through which movie links are readily accessible. In this case, movie groups are created which contain links to leaked films are used. That is illegal, you should not go.</div>
+<h2 style="text-align: left;">${name} Movie Download Bollyflix</h2>
+<div>Bollyflix has released movie leaks on Hollywood, Bollywood, Southern, Web Series, Tv-Shows, and other languages up to now. These sites offer many options, including the Movie download of HD printing, 720p 300Mb, 480p, 1080p, and 480p. However, it is illegal
+    to pirate films and download pirated ones, which is why we don’t support pirated films at all.</div>
+<h2 style="text-align: left;">${name} Movie Download Filmywap</h2>
+<div>On Filmywap you will find the entire collection from Hollywood, Bollywood, and other films in different languages. The pirated copy of the film will be posted in HD print resolution. It’s illegal.</div>
+<h2 style="text-align: left;">${name} Movie Download TamilRockers</h2>
+<div>TamilRockers website leaks Hindi, Marathi, South Indian, and Hollywood movies. The Movie download ${name} can be accessed through this site, which is also in HD quality. However, pirating films and downloading pirated films is a crime that is illegal
+    and comes with a promise of severe punishment for doing this.</div>
+<div><br /></div>
+<h2 style="text-align: left;">${name} Movie Download Pagalmovies</h2>
+<div>Pagalmovies to date downloads all sorts of films to date in Full HD resolution. The users are able to select a resolution between 1080p, 720p, or 480p. 1080p to download the film. It is a site known for its leaks of pirated films. It is also prohibited
+    in many other countries, including Indian. You should not go Download movies.</div>
+<h2 style="text-align: left;">${name} Movie Download Tamilmv</h2>
+<div>Tamilmv has released movie leaks on Hollywood, Bollywood, Southern, Web Series, Tv-Shows, and other languages. These sites offer many options, including the Movie Download of HD printing, 720p 300Mb, 480p, 1080p, and 480p. However, it is illegal to pirate
+    films and pirated ones, which is why we don’t support pirated films at all.</div>
+<div><br /></div>
+<div>
+    <blockquote>Disclaimer: This website never promotes any piracy content through this or any other website or platform. This website is for informational purposes only. In this article, we only give information. Piracy is an act of crime &amp; It is considered
+        a serious offence under the copyright act of 1957. Please stay away from such websites, and choose the right way to download movies.</blockquote>
+</div>
+	`;
+	
+	markupContainer.textContent = markup;
+});
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+//]]>
+ </script>
+</body>
+</html>
